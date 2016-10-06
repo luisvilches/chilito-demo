@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Chilito</title>
+	<link rel="icon" type="image/png" href="img/favicon.ico" />
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="lib/animate (1).css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="css/fonts.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="./tienda/css/icono.min.css">
+	<link rel="stylesheet" type="text/css" href="./tienda/css/tienda.css">
+	
+
+</head>
+<body ng-controller="appCtrl">
+	<header>
+		<!--navbar-->
+		<nav>
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#!" class="brand-logo">
+						<img src="img/logo.png" alt="logo-chilito" class="logo">
+					</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#video">Videos</a></li>
+						<li><a href="#tienda">Tienda</a></li>
+						<li><a href="#">Contáctame</a></li>
+						<li>
+							<a href="https://www.facebook.com/chilito.cl" class="ico-rrss">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="https://twitter.com/_Chilito" class="ico-rrss">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="https://instagram.com/chilito.cl/" class="ico-rrss">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.youtube.com/watch?v=JlGwA9xN9QA" class="ico-rrss">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							
+						</li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Tienda</a></li>
+						<li><a href="#">Contáctame</a></li>
+						<li>
+							<a href="https://www.facebook.com/chilito.cl" class="ico-rrss">
+								<span class="fa fa-facebook" aria-hidden="true"></span>
+							</a>
+							<a href="https://twitter.com/_Chilito" class="ico-rrss">
+								<span class="fa fa-twitter" aria-hidden="true"></span>
+							</a>
+							<a href="https://instagram.com/chilito.cl/" class="ico-rrss">
+								<span class="fa fa-instagram" aria-hidden="true"></span>
+							</a>
+							<a href="https://www.youtube.com/watch?v=JlGwA9xN9QA" class="ico-rrss">
+								<span class="fa fa-youtube" aria-hidden="true"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--slide-->
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="img/slide1.jpg">
+				</li>
+				<li>
+					<img src="img/slide2.jpg">
+				</li>
+				<li>
+					<img src="img/slide3.jpg">
+				</li>
+				<li>
+					<img src="img/slide4.jpg">
+				</li>
+				<li>
+					<img src="img/slide5.jpg">
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section class="video section" id="video">
+		<div class="container ">
+			<div class="row">
+				<div class="col s12 m12 center-align">
+					<div class="cont-video">
+						<img class="responsive-img" src="img/tv.png" alt="tv-video-chilito">
+						<div class="cont-play">
+							<a href="#modal1" class="modal-trigger">
+								<i class="fa fa-play-circle-o" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<h2 class="title-section">DALE PLAY A MIS VIDEOS</h2>
+					<span class="subtitle-section">hechos con mucho amor 
+						<i class="fa fa-heart" aria-hidden="true"></i>
+						<i class="fa fa-heart" aria-hidden="true"></i>
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<iframe src="https://www.youtube.com/embed/JlGwA9xN9QA" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+	<section class="club" id="club">
+		<div class="container-fluid">
+			<div class="row pd-top pd-bottom">
+				<div class="col s12 m4 padding-vertical">
+					<img src="img/astronauta.png" alt="placeholder+image" class="astronauta center-align">
+				</div>
+				<div class="col s12 m8 center-align section">
+					<div id="tituloDeslizable">
+						<h2 class="title-section pd-top">ÚNETE A MI CLUB</h2>
+					</div>
+					<div id="subtituloDeslizable">
+						<span class="subtitle-section">y compartiré contigo mis mejores alegrías</span>
+					</div>
+					  <div class="row pd-bottom pd-top">
+					    <div class="col s12">
+					      <form action="enviar.php" method="post">
+					      	<input type="text" name="nombre" placeholder="Nombre" required/>
+					      	<input type="text" name="correo" placeholder="Correo" required/>
+					      	<input type="text" name="origen" placeholder="¿Donde vives?" required/>
+					      	<input type="submit" value="Seamos Amigos" id="boton" class="waves-effect btn-large blue boton-club title-section-club" />
+					      </form>
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tienda" id="tienda">
+		<div class="container-fluid">
+			<div class="row center-align">
+				<div class="col s12">
+					<h2 class="title-section-blue">MI TIENDA</h2>
+					<span class="subtitle-section-blue">Llego hasta donde me quieras llevar</span>
+				</div>
+				<a href="#modal2" class="waves-effect waves-light modal-trigger badgeCart" data-badgeCart="{{totalItems()}}">
+					<i class="material-icons">shopping_cart</i>
+				</a>
+			</div>
+			<div class="row center-align pd-top">
+				<div class="col s12 m4" ng-repeat="producto in productos" ng-hide="error">
+					<img class="img" ng-src="{{producto.urlImage}}">
+					<h5 class="ProductName">{{producto.nombre}}</h5>
+					<h5 class="ProductName">{{producto.precio | currency:'$':0}}</h5>
+					<div class="center-align">
+						<input ng-model="producto.cantidad" class="inputNumber cant" type="number" placeholder="Ingrese la Cantidad a comprar">
+						<button class="btn blue" ng-click="addToCart(producto)">Agregar al Carrito</button>
+					</div>
+				</div>
+			</div>
+			<div id="modal2" class="modal">
+			    <div class="modal-content">
+			      <table >
+						<tr>
+							<td class="titleTable">Cantidad</td>
+							<td class="titleTable pd-titleName">Nombre</td>
+							<td class="titleTable">Precio</td>
+							<td class="titleTable">Total</td>
+						</tr>
+						<tr class="tr" ng-repeat="item in items">
+							<td>{{item.cantidad}}</td>
+							<td>{{item.nombre}}</td>
+							<td>{{item.precio | currency:'$':0}}</td>
+							<td>{{item.sum | currency:'$':0}}</td>
+							<td><button class="btn blue" ng-click="delete($index)">x</button></td>
+						</tr>
+
+					</table>
+					<hr>
+					<div>
+						<p class="total">Total: {{getTotal() | currency:'$':0}}</p>
+					</div>
+					<br>
+					<button class="boton" ng-click="generarCompra()">Generar Compra</button>
+
+					<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			            <input type="hidden" name="cmd" value="_xclick">
+			            <input type="hidden" name="business" value="luis-facilitador@luisvilches.cl">
+			            <input type="hidden" name="item_name" value="Productos chilito">
+			            <input type="hidden" name="currency_code" value="USD">
+			            <input type="hidden" name="amount"  value="{{ venta }}">
+			            <input type="hidden" name="return" value="http://localhost:8080">
+						<input type="hidden" name="cancel_return" value="http://localhost:8080">
+			            <input type="submit" class="boton"  name="submit" alt="paypal" value="Generar compra con paypal">
+			        </form>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<section class="mapa pd-top" id="mapa">
+		<div class="container center-align">
+			<div class="row">
+				<div class="col s12">	
+					<img class="responsive-img" src="img/titulo pagina 5.png" alt="">
+				</div>
+			</div>
+			<div class="row pd-top">
+				<div class="col s12">
+					<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/chilito.n4c2kn33/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiY2hpbGl0byIsImEiOiJjZTEzZmUzOTE2ZGQzODZmNWU3MGM3MWZmZWIxZjIzNiJ9.0Sr45HnATOJmbQmlevgRLg'></iframe>
+				</div>
+			</div>
+			<div class="row pd-bottom pd-top">
+				<div class="col s12">
+					<img src="img/logos-puntos-deventa.jpg" alt="" style="max-width: 90%;" class="center-align">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="recuerdos section">
+		<div class="container-fluid center-align">
+			<div class="row pd-top padding-bottom">
+				<div class="col s12">
+					<h2 class="title-section">MIS RECUERDOS</h2>
+					<span class="subtitle-section">saludos de grandes amigos</span>
+				</div>
+			</div>
+			<img src="img/Chilito fotografo.png" alt="" class="fotografo">
+			<div class="row pd-top">
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-1.jpg" alt="">
+						<img src="img/texto para foto 1.png" alt="">
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-2.jpg" alt="">
+						<img src="img/texto para foto 2.png" alt="">
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-3.jpg" alt="">
+						<img src="img/texto para foto 3.png" alt="">
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-4.jpg" alt="">
+						<a href="https://youtu.be/o9o_h-9GcAY"><img src="img/texto para foto 4.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-5.jpg" alt="">
+						<img src="img/texto para foto 5.png" alt="">
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-6.jpg" alt="">
+						<img src="img/texto para foto 6.png" alt="">
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-7.jpg" alt="">
+						<img src="img/texto para foto 7.png" alt="">
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="foto">
+						<img src="img/foto-amigos-8.jpg" alt="">
+						<img src="img/texto para foto 8.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="escribeme" class="escribeme section">
+		<div class="container">
+			<div class="row pd-top pd-bottom">
+				<div class="col s12 center-align">
+					<h2 class="title-section">ESCRÍBEME</h2>
+					<span class="subtitle-section">Quiero saber de ti</span>
+				</div>
+			</div>
+			<div class="row center-align">
+				<div class="col s7">
+					<form action="contacto.php" method="post">
+				      	<input type="text" name="nombre" placeholder="Tu nombre" required/>
+				      	<input type="text" name="correo" placeholder="Tu correo" required/>
+				      	<input type="text" name="origen" placeholder="¿País donde vives?" required/>
+				      	<textarea name="com" id="" cols="40" rows="80">Cuentame todo!!</textarea>
+				      	<input type="submit" value="Enviar" id="boton" class="waves-effect btn-large red boton-contacto title-section-club" />
+				    </form>
+				</div>
+				<div class="col s5">
+					<img class="responsive-img" src="img/astronauta en la luna.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container-fluid center-align">
+					<img class="responsive-img" src="img/footer.jpg" alt="">
+			
+		</div>
+	</footer>
+	<div id="principal">
+		<div id="notificacion">
+		Se ha actualizado tu perfil. <a id="close">cerrar</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="./tienda/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./tienda/controller.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bin/materialize.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
